@@ -8,20 +8,11 @@ $(document).ready(function() {
     console.log(counter);
 
     if (twtLength <= 140) {
-      $(counter).html(140 - twtLength);
+      $(counter).removeClass("red").html(140 - twtLength);
     }
     if (twtLength > 140) {
-      $(counter).html(140 - twtLength)
+      $(counter).addClass("red").html(140 - twtLength)
     }
 
-    if (twtLength = 141) {
-      $(counter).addClass("red");
-    }
-
-    if (twtLength = 140) {
-      $(counter).removeClass("red");
-    }
-    
   });
 });
-
