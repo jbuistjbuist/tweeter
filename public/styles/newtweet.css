@@ -48,7 +48,7 @@ main form textarea {
 main form textarea::placeholder {
   font-style: normal;
   font-size: 1.5em;
-  padding-left: 30px;
+  padding-left: 8%;
   background: linear-gradient(45deg, #4056A1 5%, #db9b56d8 35%);
   -webkit-background-clip: text;
   background-clip: text;
