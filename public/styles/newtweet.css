@@ -6,9 +6,13 @@
   justify-items: space-between;
   padding: 0.6em;
   width: 100%;
-  margin: 0px auto 10px auto;
+  margin: 15px auto 5px auto;
   border-radius: 4px;
+}
+
+.tweetform:hover {
   box-shadow: 3px 3px 4px 4px rgba(205, 198, 198, 0.818);
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 .formfoot {
@@ -42,8 +46,10 @@ main form textarea {
 }
 
 main form textarea::placeholder {
-  font-style: italic;
-  background: linear-gradient(45deg, #4056A1 0%, #db9b56d8 10%);
+  font-style: normal;
+  font-size: 1.5em;
+  padding-left: 30px;
+  background: linear-gradient(45deg, #4056A1 5%, #db9b56d8 35%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -56,7 +62,7 @@ main form label {
 }
 
 .red {
-  color: red;
+  color: rgb(213, 35, 35);
 }
 
 
