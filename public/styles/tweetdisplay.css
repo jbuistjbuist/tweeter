@@ -62,9 +62,9 @@ section footer {
 
 section footer div {
   display: flex;
-  width: 8%;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  gap: 12%;
   color: #4056A1;
 }
 
