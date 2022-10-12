@@ -54,7 +54,6 @@ $('.tweetform').submit(function(event) {
       let $tweet = createTweetElement(data[data.length - 1]);
       $('.tweetlist').prepend($tweet);
     }).catch(error => console.log(error))
-
   });
 
 })
