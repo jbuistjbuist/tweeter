@@ -1,6 +1,8 @@
 
 $(document).ready(function() {
 
+  $("aside").hide();
+
   const createTweetElement = function(tweetData) {
 
     let time = timeago.format(tweetData.created_at);
@@ -38,15 +40,19 @@ $('.tweetform').submit(function(event) {
   const textLength = $('#tweet-text').val().length;
 
   if (!textLength) {
-    alert("Please write something in order to make a tweet!");
+    $("aside p").text("Please fill out the form to submit a tweet!")
+    $("aside").slideDown(200);
     return;
   }
 
   if (textLength > 140) {
-    alert("Your text exceeds 140 characters.")
+    $("aside p").text("Your tweet exceeds 140 characters.")
+    $("aside").slideDown(200);
     return;
   }
 
+
+  $("aside").hide(200);
   $(this).trigger('reset');
 
   $.post('/tweets', data).then(() => {
