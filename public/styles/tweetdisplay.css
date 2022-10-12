@@ -78,15 +78,15 @@ section footer div i:hover{
   transform: scale(1.2);
 }
 
-#flag:hover {
+.flag:hover {
   color: #D37506;
 }
 
-#retweet:hover {
+.retweet:hover {
   color: rgb(17, 194, 234)
 }
 
-#heart:hover {
+.heart:hover {
   color: rgb(213, 35, 35);
 }
 
