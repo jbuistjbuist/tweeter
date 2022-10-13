@@ -2,12 +2,13 @@ $(document).ready(function(){
 
   const navbtn = $(".tweetlink");
   const scrollbtn = $('#scrollbtn');
+  scrollbtn.hide();
   
 
   navbtn.on("click", function() {
-    $('.container').animate({
-      scrollTop: $('.tweetform').offset().top
-    }, 1000)
+    $('html, body').animate({
+      scrollTop: $('.tweetform').offset().top - 400
+    }, 0)
 
     $('#tweet-text').trigger("focus");
   })
@@ -22,11 +23,15 @@ $(document).ready(function(){
 
   $(window).scroll(function() {
       var scroll = $(window).scrollTop()
-      if (scroll >= 500) {
-        $('nav > div').addClass("nav-el-bg")
+      if (scroll >= 450) {
+        $('.logo').addClass("nav-el-bg");
+        navbtn.fadeOut(200);
+        scrollbtn.fadeIn(100)
       }
-      if (scroll <= 500) {
-        $('nav > div').removeClass("nav-el-bg")
+      if (scroll < 450) {
+        $('.logo').removeClass("nav-el-bg");
+        navbtn.fadeIn(200);
+        scrollbtn.fadeOut(200);
       }
   })
 
