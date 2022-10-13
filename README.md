@@ -3,6 +3,14 @@
 Tweeter is a simple, single-page Twitter clone.
 
  Starting with a template containing some backend functionality, we were responsible for developing the front-end and responsive features of the application with Ajax, jQuery, Javascript, CSS, HTML and SASS. 
+ 
+Tablet layout and functionality:
+
+https://user-images.githubusercontent.com/79812985/195731801-16239a68-25c2-42cd-9b30-320499426d0e.mov
+
+Desktop layout:
+
+!["desktop mode screen capture"](https://github.com/jbuistjbuist/tweeter/blob/master/docs/desktop_mode.png?raw=true)
 
 ## Getting Started
 
