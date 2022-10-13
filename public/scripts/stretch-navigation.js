@@ -23,7 +23,13 @@ $(document).ready(function(){
       scrollTop: $('.tweetform').offset().top - 400
     }, 0)
 
-      newTwt.slideToggle();
+      if (window.scrollY < 250) {
+        newTwt.slideToggle();
+      }  else {
+        newTwt.slideDown();
+      }
+
+      
 
     $('#tweet-text').trigger("focus");
   })
