@@ -42,12 +42,12 @@ $(document).ready(function(){
 
   $(window).scroll(function() {
       var scroll = $(window).scrollTop()
-      if (scroll >= 330) {
+      if (scroll >= 330 && window.innerWidth < 1024) {
         $('.logo').addClass("nav-el-bg");
         navbtn.fadeOut(200);
         scrollbtn.fadeIn(100)
       }
-      if (scroll < 330) {
+      if (scroll < 330 && window.innerWidth < 1024) {
         $('.logo').removeClass("nav-el-bg");
         navbtn.fadeIn(200);
         scrollbtn.fadeOut(200);
