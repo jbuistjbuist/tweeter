@@ -29,7 +29,9 @@ const renderTweets = function(tweets) {
 }
 
 const loadTweets = function() {
-  $.get('/tweets').then((data) => renderTweets(data));
+  $.get('/tweets')
+    .then((data) => renderTweets(data))
+    .catch((error) => console.log(error));
 }
 
 loadTweets();
