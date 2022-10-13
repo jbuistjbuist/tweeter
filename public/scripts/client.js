@@ -56,6 +56,7 @@ $('.tweetform').submit(function(event) {
 
   $("aside").hide(200);
   $(this).trigger('reset');
+  $(this).find('output').html('140');
 
   $.post('/tweets', data).then(() => {
     $.get('/tweets').then((data) => {
