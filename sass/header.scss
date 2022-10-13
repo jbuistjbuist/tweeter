@@ -1,0 +1,25 @@
+.pageheader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 420px;
+  background-color: #db9b56ac;
+  background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
+  z-index: 5;
+}
+
+header h2 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.8em;
+  width: 100%;
+  margin-top: -20;
+  text-align: center;
+}
+
+header h2 strong {
+  font-weight: 600;
+}
+
