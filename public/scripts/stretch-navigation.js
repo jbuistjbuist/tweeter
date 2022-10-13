@@ -1,9 +1,18 @@
 $(document).ready(function(){
 
   const navbtn = $(".tweetlink");
+  const scrollbtn = $('#scrollbtn');
   
 
   navbtn.on("click", function() {
+    $('.container').animate({
+      scrollTop: $('.tweetform').offset().top
+    }, 1000)
+
+    $('#tweet-text').trigger("focus");
+  })
+
+  scrollbtn.on("click", function() {
     $('.container').animate({
       scrollTop: $('.tweetform').offset().top
     }, 1000)
