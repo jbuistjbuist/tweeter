@@ -58,6 +58,11 @@ $(document).ready(function(){
         navbtn.fadeIn(200);
         scrollbtn.fadeOut(200);
       }
+
+      if (window.innerWidth > 1024) {
+        navbtn.fadeIn(200);
+        scrollbtn.fadeOut(200);
+      }
   })
 
 })
