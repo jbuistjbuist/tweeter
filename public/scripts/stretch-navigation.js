@@ -4,9 +4,18 @@ $(document).ready(function(){
 
   const navbtn = $(".tweetlink");
   const scrollbtn = $('#scrollbtn');
-  const newTwt =   $('.new-tweet')
+  const newTwt =   $('.new-tweet');
   scrollbtn.hide();
   newTwt.hide();
+
+//adding a spinning interaction to the button when hovered over.
+  navbtn.hover(function() {
+    $(this).find('i').addClass("hovered");
+  }, 
+  
+  function() {
+    $(this).find('i').removeClass("hovered");
+  });
   
 
   navbtn.on("click", function() {

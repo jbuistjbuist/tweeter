@@ -12,6 +12,28 @@
   }
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(60deg)
+  }
+
+  25% {
+    transform: rotate(90deg)
+  }
+
+  50% {
+    transform: rotate(120deg)
+  }
+
+  75% {
+    transform: rotate(150deg)
+  }
+
+  100% {
+    transform: rotate(180deg)
+  }
+}
+
 @-webkit-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
@@ -67,6 +89,12 @@ nav i {
   color: #c04912;
   display: block;
   animation: updown 2s infinite;
+  transition: all .2s ease-in-out;
+}
+
+nav .hovered {
+  animation: spin 0.2s;
+  transform: rotate(180deg)
 }
 
 nav p em {
