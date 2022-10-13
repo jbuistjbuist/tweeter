@@ -15,8 +15,8 @@ $(document).ready(function(){
 
   scrollbtn.on("click", function() {
 
-    $('.container').animate({
-      scrollTop: $('.tweetform').offset().top
+    $('html, body').animate({
+      scrollTop: $('.tweetform').offset().top - 400
     }, 1000)
 
     $('#tweet-text').trigger("focus");
