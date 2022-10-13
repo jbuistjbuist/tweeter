@@ -5,7 +5,7 @@
   justify-content: center;
   width: 100%;
   height: 420px;
-  background-color: #db9b56ac;
+  background-color: rgba(219, 155, 86, 0.6745098039);
   background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
   z-index: 5;
 }
@@ -22,4 +22,3 @@ header h2 {
 header h2 strong {
   font-weight: 600;
 }
-

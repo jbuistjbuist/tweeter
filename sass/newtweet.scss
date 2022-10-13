@@ -1,3 +1,5 @@
+@use 'base';
+
 .tweetform {
   display: flex;
   flex-direction: column;
@@ -11,7 +13,7 @@
 }
 
 .tweetform:hover {
-  box-shadow: 3px 3px 4px 4px rgba(205, 198, 198, 0.818);
+  box-shadow: 3px 3px 4px 4px base.$shdwGrey;
   transition: box-shadow 0.2s ease-in-out;
 }
 
@@ -21,13 +23,13 @@
   flex-direction: row;
   justify-content: space-between;
   margin-top: 15px;
-  font-family: "Bungee", sans-serif;
+  font-family: base.$bungee;
   font-size: 0.75em;
 }
 
 .formfoot button {
   color: white;
-  background-color: #4056A1;
+  background-color: base.$tweetBlue;
   transition: all .2s ease-in-out;
 }
 
@@ -36,7 +38,7 @@
 }
 
 main form textarea {
-  border-bottom: 4px solid rgba(29, 27, 27, 0.798);
+  border-bottom: 4px solid base.$offBlack;
   border-left: none;
   border-right:none;
   border-top: none;
@@ -54,7 +56,7 @@ main form textarea::placeholder {
   font-style: normal;
   font-size: 1.5em;
   padding-left: 8%;
-  background: linear-gradient(45deg, #4056A1 5%, #db9b56d8 35%);
+  background: linear-gradient(45deg, base.$tweetBlue 5%, #db9b56d8 35%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -63,11 +65,11 @@ main form textarea::placeholder {
 main form label {
   font-size: 0.9em;
   font-weight: 600;
-  color: rgba(29, 27, 27, 0.702)
+  color: base.$offBlack;
 }
 
 .red {
-  color: rgb(213, 35, 35);
+  color: base.$offRed;
 }
 
 aside {
@@ -75,7 +77,7 @@ aside {
   justify-content: center;
   align-items: center;
   gap: 2%;
-  border: 4px solid rgb(213, 35, 35);
+  border: 4px solid base.$offRed;
   width: 70%;
   margin: 20px auto 0 auto;
   color: rgb(213, 35, 35);

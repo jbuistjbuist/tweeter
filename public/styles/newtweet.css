@@ -28,17 +28,17 @@
 .formfoot button {
   color: white;
   background-color: #4056A1;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .formfoot button:hover {
-  transform: scale(1.1)
+  transform: scale(1.1);
 }
 
 main form textarea {
   border-bottom: 4px solid rgba(29, 27, 27, 0.798);
   border-left: none;
-  border-right:none;
+  border-right: none;
   border-top: none;
   margin-top: 15px;
   width: 100%;
@@ -54,7 +54,7 @@ main form textarea::placeholder {
   font-style: normal;
   font-size: 1.5em;
   padding-left: 8%;
-  background: linear-gradient(45deg, #4056A1 5%, #db9b56d8 35%);
+  background: linear-gradient(45deg, #4056A1 5%, rgba(219, 155, 86, 0.8470588235) 35%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -63,7 +63,7 @@ main form textarea::placeholder {
 main form label {
   font-size: 0.9em;
   font-weight: 600;
-  color: rgba(29, 27, 27, 0.702)
+  color: rgba(29, 27, 27, 0.798);
 }
 
 .red {
@@ -91,5 +91,3 @@ aside i {
   font-size: 1.2em;
   margin: 10px, 0;
 }
-
-

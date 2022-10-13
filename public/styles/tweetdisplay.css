@@ -34,7 +34,7 @@ section article:hover {
 }
 
 .tweetheader div img {
-  padding-right: 5px; 
+  padding-right: 5px;
   max-height: 45px;
   max-width: auto;
 }
@@ -71,10 +71,10 @@ section footer div {
 section footer div i {
   font-size: 1.5em;
   align-items: center;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-section footer div i:hover{
+section footer div i:hover {
   transform: scale(1.2);
 }
 
@@ -83,12 +83,9 @@ section footer div i:hover{
 }
 
 .retweet:hover {
-  color: rgb(17, 194, 234)
+  color: rgb(17, 194, 234);
 }
 
 .heart:hover {
   color: rgb(213, 35, 35);
 }
-
-
-
