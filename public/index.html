@@ -49,6 +49,7 @@
         </div>
     </nav>
 
+    <!-- page header element containing the image and profile name -->
     <header class="pageheader">
         <div class="image">
             <img src="/images/profile-hex.png" alt="profilepicture"> 
@@ -57,10 +58,14 @@
           <h2 ><strong>Stephanie</strong> Germanotta</h2>
         </div>
   </header>
+
     <!-- Page-specific (main) content here -->
     <div class="maincontainer">
       <main class="container">
+
+        <!-- section for composing a new tweet -->
         <section class="new-tweet">
+          <!-- this aside is the error message which is sometimes displayed -->
           <aside>
             <i class="fa-solid fa-worm"></i>
             <p></p>
@@ -73,6 +78,7 @@
               <output name="counter" class="counter" for="tweet-text">140</output>
             </div>
           </form>
+          <!-- this section becomes popolated with the tweet articles when they are loaded -->
         </section>
         <section class="tweetlist">
         </section>
