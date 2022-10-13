@@ -1,14 +1,20 @@
 $(document).ready(function(){
 
+
+
   const navbtn = $(".tweetlink");
   const scrollbtn = $('#scrollbtn');
+  const newTwt =   $('.new-tweet')
   scrollbtn.hide();
+  newTwt.hide();
   
 
   navbtn.on("click", function() {
     $('html, body').animate({
       scrollTop: $('.tweetform').offset().top - 400
     }, 0)
+
+      newTwt.slideToggle();
 
     $('#tweet-text').trigger("focus");
   })
@@ -18,6 +24,8 @@ $(document).ready(function(){
     $('html, body').animate({
       scrollTop: $('.tweetform').offset().top - 400
     }, 0)
+
+    newTwt.slideDown();
 
     $('#tweet-text').trigger("focus");
 
