@@ -12,6 +12,10 @@
   }
 }
 
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
 
 nav {
   display: flex;
@@ -30,6 +34,13 @@ nav {
 nav .logo {
   font-family: 'Bungee', sans-serif;
   font-size: 1.75em;
+}
+
+.nav-el-bg {
+  padding: 12px;
+  background-color: rgba(0, 0, 0, 0.259);
+  border-radius: 5px;
+  -webkit-animation: fadein 2s;
 }
 
 nav .tweetlink {
