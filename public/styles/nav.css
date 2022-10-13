@@ -53,9 +53,9 @@ nav .nav-el-bg {
 }
 nav .tweetlink {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 0;
   transition: all 0.2s ease-in-out;
 }

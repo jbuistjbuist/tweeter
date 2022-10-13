@@ -9,3 +9,10 @@ $offBlack: rgba(29, 27, 27, 0.798);
 //fonts
 $bungee: 'Bungee', sans-serif;
 $sansPro: 'Source Sans Pro', sans-serif;
+
+
+@mixin flex-bullseye {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}

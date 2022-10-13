@@ -64,10 +64,8 @@ nav {
   }
 
   .tweetlink {
-    display: flex;
+    @include base.flex-bullseye;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 0;
     transition: all .2s ease-in-out;
   }

@@ -73,9 +73,7 @@ main form label {
 }
 
 aside {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include base.flex-bullseye;
   gap: 2%;
   border: 4px solid base.$offRed;
   width: 70%;
