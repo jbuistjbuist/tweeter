@@ -2,7 +2,9 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
- Starting with a template containing some backend functionality, we were responsible for developing the front-end and responsive features of the application with Ajax, jQuery, Javascript, CSS, HTML and SASS. 
+ Starting with a template containing some backend functionality, students were responsible for developing the front-end and responsive features of the application with Ajax, jQuery, Javascript, CSS, HTML and SASS. 
+ 
+This project was a part of the Lighthouse Labs web development program.
  
 Tablet layout and functionality:
 
